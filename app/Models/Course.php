@@ -12,8 +12,17 @@ class Course extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'course_img', 'course_title', 'coursecontent_', 'descriptions', 'learnes', 'price', 'lessons',
-        'quizzes', 'times', 'tag', 'course_id'
+        'course_img', 
+        'course_title', 
+        'coursecontent_', 
+        'descriptions', 
+        'learnes', 
+        'price', 
+        'lessons',
+        'quizzes',
+        'times', 
+        'tag', 
+        'course_id',
     ];
 
     public function lessons()

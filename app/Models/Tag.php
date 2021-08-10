@@ -12,7 +12,8 @@ class Tag extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'tags_content', 'tag_id'
+        'tags_content', 
+        'tag_id',
     ];
 
     public function courses()
