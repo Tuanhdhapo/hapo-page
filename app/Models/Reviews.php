@@ -13,11 +13,11 @@ class Reviews extends Model
 
     protected $fillable = [
         'content_reviews',
-         'rate', 
-         'user_id', 
-         'course_id', 
-         'lessons_id', 
-         'reviews_id',
+         'rate',
+         'user_id',
+         'course_id',
+         'lessons_id',
+         'reviews_id'
     ];
 
     public function user()

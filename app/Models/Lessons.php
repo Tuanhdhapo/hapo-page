@@ -12,11 +12,11 @@ class Lessons extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'title_lessons', 
-        'requirement', 
+        'title_lessons',
+        'requirement',
         'content',
-        'course_id', 
-        'lessons_id',
+        'course_id',
+        'lessons_id'
     ];
 
     public function course()

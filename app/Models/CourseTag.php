@@ -12,8 +12,8 @@ class CourseTag extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'course_id', 
-        'tag_id', 
-        'course_tag_id',
+        'course_id',
+        'tag_id',
+        'course_tag_id'
     ];
 }
