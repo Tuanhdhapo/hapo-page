@@ -14,7 +14,6 @@ class CreateCourseUsersTable extends Migration
     public function up()
     {
         Schema::create('course_users', function (Blueprint $table) {
-            $table->id();
             $table->unsignedInteger('course_id');
             $table->unsignedInteger('user_id');
             $table->timestamps();

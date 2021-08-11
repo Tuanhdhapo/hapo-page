@@ -14,7 +14,6 @@ class CreateCourseTagsTable extends Migration
     public function up()
     {
         Schema::create('course_tags', function (Blueprint $table) {
-            $table->id();
             $table->unsignedInteger('course_id');
             $table->unsignedInteger('tags_id');
             $table->timestamps();
