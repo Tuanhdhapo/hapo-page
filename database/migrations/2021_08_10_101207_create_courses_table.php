@@ -17,9 +17,9 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('course_img')->nullable();
             $table->string('course_title')->nullable();
-            $table->string('ccourse_ontent')->nullable();
+            $table->string('course_content')->nullable();
             $table->string('descriptions')->nullable();
-            $table->integer('learners')->nullable();
+            $table->integer('learners')->default(0);
             $table->integer('lessons')->default(0);
             $table->string('time')->nullable();
             $table->string('tags')->nullable();
