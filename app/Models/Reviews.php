@@ -16,8 +16,7 @@ class Reviews extends Model
          'rate',
          'user_id',
          'course_id',
-         'lessons_id',
-         'reviews_id'
+         'lessons_id'
     ];
 
     public function user()

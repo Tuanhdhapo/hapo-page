@@ -15,9 +15,8 @@ class CreateLessonsUsersTable extends Migration
     {
         Schema::create('lessons_users', function (Blueprint $table) {
             $table->id();
-            $table->increments('lessons_id');
-            $table->increments('lessons_user_id');
-            $table->increments('user_id');
+            $table->unsignedInteger('lessons_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
         });
     }

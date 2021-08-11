@@ -13,7 +13,6 @@ class CourseUser extends Model
 
     protected $fillable = [
         'course_id',
-        'user_id',
-        'course_user_id'
+        'user_id'
     ];
 }

@@ -14,6 +14,5 @@ class LessonsUser extends Model
     protected $fillable = [
         'lesson_id',
         'used_id',
-        'lessons_user'
     ];
 }

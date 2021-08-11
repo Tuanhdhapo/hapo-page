@@ -15,8 +15,7 @@ class Lessons extends Model
         'title_lessons',
         'requirement',
         'content',
-        'course_id',
-        'lessons_id'
+        'course_id'
     ];
 
     public function course()

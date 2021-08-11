@@ -22,7 +22,6 @@ class Course extends Model
         'quizzes',
         'times',
         'tag',
-        'course_id'
     ];
 
     public function lessons()

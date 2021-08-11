@@ -13,7 +13,6 @@ class CourseTag extends Model
 
     protected $fillable = [
         'course_id',
-        'tag_id',
-        'course_tag_id'
+        'tag_id'
     ];
 }
