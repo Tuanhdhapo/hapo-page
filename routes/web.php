@@ -1,6 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Register;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterLoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+//Route::post('/login', [User::class, 'login'])->name('login');
+//Route::post('/register', [Register::class, 'register'])->name('register');
